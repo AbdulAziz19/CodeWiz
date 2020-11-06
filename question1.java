@@ -28,7 +28,7 @@ public class question1
 				else
 				{
 					System.out.println("Invalid Input");
-					break;
+					System.exit(0);
 				}
 			}
 			System.out.println(n);
