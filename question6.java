@@ -5,10 +5,9 @@ public class question6
 
 	public static void main(String[] args)
 	{
-		long i;
+		long i,ctr=0;
 		for(i=1;i>0;i++)
 		{
-			long ctr=0;
 			if(isprime(i))
 			{
 				ctr++;
