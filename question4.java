@@ -12,35 +12,6 @@ public class question4
 		m=in.nextInt();
 		System.out.println("Enter Year");
 		y=in.nextInt();
-		if(isleap(y)==1)
-		{
-			if(m==1)
-				d=d+0;
-			else if(m==2)
-				d=d+31;
-			else if(m==3)
-				d=d+60;
-			else if(m==4)
-				d=d+91;
-			else if(m==5)
-				d=d+121;
-			else if(m==6)
-				d=d+152;
-			else if(m==7)
-				d=d+182;
-			else if(m==8)
-				d=d+213;
-			else if(m==9)
-				d=d+244;
-			else if(m==10)
-				d=d+274;
-			else if(m==11)
-				d=d+305;
-			else 
-				d=d+335;
-		}
-		else
-		{
 			if(m==1)
 				d=d+0;
 			else if(m==2)
@@ -65,7 +36,8 @@ public class question4
 				d=d+304;
 			else 
 				d=d+334;
-		}
+		if((m>2)&&isleap(y)==1)
+			d++;
 		System.out.println("Day Number: "+d);
 		
 		// TODO Auto-generated method stub
